@@ -1,5 +1,5 @@
 # Code-Quiz
 
-![Code-Quize](sreenshot.png)
+![Code-Quiz](sreenshot.png)
 
 URL:https://negasimichael.github.io/Code-Quiz/
