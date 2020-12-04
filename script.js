@@ -19,12 +19,12 @@ const questions = [
     {
         Ques: " Which HTML attribute is used to define inline styles?",
         choices: ["A. font", "B. class", "C. styles", "D. style"],
-        Correct: "D.style",
+        Correct: "D. style",
 
     },
     {
         Ques: " Which is the extension of javascript file?",
-        choices: ["A. .js", "B. .jv", "C. .jc", "D..jp"],
+        choices: ["A. .js", "B. .jv", "C. .jc", "D. .jp"],
         Correct: "A. .js",
 
     },
@@ -36,14 +36,14 @@ const questions = [
     },
     {
         Ques: " What language defines the behavior of a web page?",
-        choices: ["A.HTML", "B.CSS", "C.XML", "D.Java Script"],
+        choices: ["A. HTML", "B. CSS", "C. XML", "D. Java Script"],
         Correct: "D.Java Script",
 
     },
     {
         Ques: "  _________ keyword is used to declare variables in javascript.",
-        choices: ["A.Var", "B.Dim", "C.String", "D.None of the above"],
-        Correct: "A.Var",
+        choices: ["A. Var", "B. Dim", "C. String", "D. None of the above"],
+        Correct: "A. Var",
 
 
     },
@@ -92,7 +92,18 @@ function loadQuestion() {
         btn.id = choice
         btn.addEventListener('click', (e) => {
             console.log(e.target.id)
+            console.log(questions[i].Correct)
+            console.log(e.target.id===questions[i].Correct)
+            if(e.target.id===questions[i].Correct){
+                score++
+            }
+            else{score--
+                console.log('insideelse', score)
+
+            }
+
             // if value of button clicked is equal to questions[i].Correct
+            console.log(e.target.id==questions[i].totalQuestion)
                 // add to score, 
                 // next question
             // else, go to next question
